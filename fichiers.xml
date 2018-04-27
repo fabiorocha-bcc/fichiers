@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content">
+    <name>FICHIERS - Listagem de diretórios e arquivos</name>
+    <author>CB SEL FÁBIO</author>
+    <creationDate>01 jun 2016</creationDate>
+    <copyright>STI GAP-AN</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>fabiorocha@baan.aer.mil.br</authorEmail>        
+    <version>1.0</version>
+    <description><![CDATA[Lista todos os diretórios e arquivos recursivamente de um determinado diretório, passado como parametro através do identificador {fichiers}DIRETORIO|RESPONSAVEL|EXTENSÕES|ORDENAÇÃO{/fichiers}
+            <br /><b>Conforme exemplos:</b><br />
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL{/fichiers}</i> : lista qualquer tipo de arquivo e ordena por nome do arquivo.<br />
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL|text{/fichiers}</i> : lista somente os arquivos de texto, sendo eles: doc, docx, odt, ods, xls, xlxs, pdf e ordena por nome do arquivo.<br />
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL|image{/fichiers}</i> : lista somente os arquivos de imagens, sendo eles: jpg, bmp, png e gif. e ordena por nome do arquivo.<br />
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL|pdf,jpg{/fichiers}</i> : lista somente os tipos de arquivos relacionados.e ordena por nome do arquivo.<br />
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL|a|m{/fichiers}</i> : lista qualquer tipo de arquivo e ordena pela ordem no arquivo fichier.<br /> 
+            <i>{fichiers}PASTA_ARQUIVOS|RESPONSAVEL|a|c{/fichiers}</i> : lista qualquer tipo de arquivo e ordena pela ordem de criação dos arquivos do mais recente para o mais novo.<br />]]>           
+    </description>
+    <!-- Parameters -->
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="rootfolder" type="text" default="CONTEUDO/PLUGIN" label="Diretório Raiz" description="Diretório que conterá as demais subpastas para listagem." />				
+            </fieldset>
+        </fields>
+    </config>
+    <files>
+        <filename plugin="fichiers">fichiers.php</filename>
+        <filename>index.html</filename>
+        <filename>download.php</filename>
+        <filename>css/default.css</filename>
+        <filename>css/jquery.fancybox.css</filename>
+        <filename>css/index.html</filename>
+        <filename>js/fichiers.js</filename>
+        <filename>js/jquery.fancybox.js</filename>  
+        <filename>js/index.html</filename>              
+        <folder>img</folder>
+    </files>
+</extension>
