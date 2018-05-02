@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="content">
     <name>FICHIERS - Listagem de diretórios e arquivos</name>
-    <author>CB SEL FÁBIO</author>
+    <author>FÁBIO ROCHA</author>
     <creationDate>01 jun 2016</creationDate>
-    <copyright>STI GAP-AN</copyright>
+    <copyright>FSR</copyright>
     <license>GNU General Public License</license>
-    <authorEmail>fabiorocha@baan.aer.mil.br</authorEmail>        
+    <authorEmail>fabiorocha_bcc@hotmail.com</authorEmail>        
     <version>1.0</version>
     <description><![CDATA[Lista todos os diretórios e arquivos recursivamente de um determinado diretório, passado como parametro através do identificador {fichiers}DIRETORIO|RESPONSAVEL|EXTENSÕES|ORDENAÇÃO{/fichiers}
             <br /><b>Conforme exemplos:</b><br />
