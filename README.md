@@ -40,9 +40,27 @@ Create a article, insert in the text body:
   You can select the order in which the files are listed in the text body
   ```
   null = sort by name file
-  m = sort by list in fichier.ini
+  m = sort by list in fichiers.ini
   c = sort by create date of the file
   ```
+  Only directory is required, by default this responsible is null, extensions is all and sort is by name.
+  
+  ### VIEW  
+ You can configure the display name and a short description of the file contents through the file fichiers.ini. Copy this file to directory. In the fichiers.ini each line you can put 3 params separated by |. First is the file name with extension, second the display name and the last a description. I.e: Test.docx
+ ```
+  Test.docx | Document of test | This a document to test the plugin
+  ```
+  
+  ### EXAMPLES
+ ```
+{fichiers}DIRECTORY|RESPONSIBLE{/fichiers} -> LIST ALL FILES AND SORT BY NAME
+{fichiers}DIRECTORY|RESPONSIBLE|text{/fichiers} -> LIST ONLY TEXT FILES: doc, docx, odt, ods, xls, xlxs, pdf AND SORT BY NAME
+{fichiers}DIRECTORY|RESPONSIBLE|image{/fichiers} : LIST ONLY IMAGE FILES jpg, bmp, png e gif. AND SORT BY NAME
+{fichiers}DIRECTORY|RESPONSIBLE|pdf,jpg{/fichiers} : LIST ONLY SELECTED EXTENSIONS AND SORT BY NAME.
+{fichiers}DIRECTORY|RESPONSIBLE|a|m{/fichiers} : LIST ALL FILES AND SORT BY ORDER IN fichiers.ini
+{fichiers}DIRECTORY|RESPONSIBLE|a|c{/fichiers} : LIST ALL FILES AND SORT BY NEWER FILES
+```
+ 
   
   
 
