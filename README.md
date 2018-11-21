@@ -20,21 +20,28 @@ Install like any joomla plugin.
 In Plugin Manager enable the FICHIERs plugin and set de root directory.
 
 ## USAGE
-Create a article, insert in body text:
+Create a article, insert in the text body:
 ```
 {fichiers}DIRECTORY|RESPONSIBLE|EXTENSIONS|SORT{/fichiers}
 ```
 ### PARAMS
 #### DIRECTORY
-  Is a sub-directory of the root directory.
+  This is a sub-directory of the root directory.
 #### RESPONSIBLE
-  Is the responsible to publish by files into directory.
+  This is the responsible to publish by files into directory.
 #### EXTENSIONS 
-  Is possible select which are extensions will be visible in the article. Can be 
+  You can select which extensions will be visible in the article. Can be:  
   ```
   a =  list all files in directory
   text = list all text files like doc, docx, odt, ods, xls, slsx, pdf...
   image = list all image files
+  ```
+ #### SORT  
+  You can select the order in which the files are listed in the text body
+  ```
+  null = sort by name file
+  m = sort by list in fichier.ini
+  c = sort by create date of the file
   ```
   
   
