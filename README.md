@@ -9,5 +9,14 @@ To use the plugin, you need to:
 ```
 A joomla 3.x website;
 
-A directory in the root site to put the files to be published, being a directory samba share.
+A directory in the root site to put the files to be published, can be a directory of samba sharing;
+
+Permission to install joomla plugins
 ```
+### Installing
+Install like any joomla plugin.
+
+### Enabling
+In Plugin Manager enable the FICHIERs plugin and set de root directory.
+
+
